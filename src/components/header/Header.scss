@@ -1,0 +1,34 @@
+@use '../../sass/variables' as * ;
+
+.header{
+  height: 74px;
+  background-color: $secondary-color;
+  .header-content{
+    display: flex;
+    align-items: end;
+    height: 100%;
+    margin: 0 0 0 61px;
+
+    p{
+      font-weight: 600;
+      font-size: $small-font;
+      width: 174px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+    }
+    span{
+      background-color: #fff;
+      color: $secondary-color;
+      font-weight: 600;
+      width: 174px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 39px;
+      border-radius: 10px 10px 0px 0px;
+      font-size: $small-font;
+    }
+  }
+}

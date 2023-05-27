@@ -1,0 +1,50 @@
+@use '../../sass/variables' as *;
+
+.itemList-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 106px;
+  table{
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    thead{
+      position: relative;
+      th{
+        padding: 10px;
+        width: 30%;
+        font-size: $medium-font;
+        font-weight: 600;
+      }
+      .position-start{
+        text-align: start;
+      }
+      .position-end{
+        text-align: end;
+      }
+    }
+    tbody{
+      td{
+        padding: 5px;
+        color: $description-color;
+        font-size: $small-font;
+        padding-top: 20px;
+      }
+      .position-start{
+        text-align: start;
+      }
+      .position-end{
+        display: flex;
+        justify-content: end;
+      }
+      img{
+        width: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+    }
+  }
+}
