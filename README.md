@@ -2,12 +2,7 @@
 	<h1>Listagem de tarefas</h1>
 	<br>
 	<p align="center">
-		<a href="https://www.linkedin.com/in/felipejsborges/">
-		  <img alt="made by" src="https://img.shields.io/badge/made%20by-Felipe%20Borges-orange">
-		</a>
-		<a href="https://github.com/felipejsborges/pokemon-challenge/commits/master">
-		  <img alt="last commit" src="https://img.shields.io/github/last-commit/felipejsborges/felipejsborges">
-		</a>
+		Site do projeto: <a href='https://to-do-dnc.vercel.app/'>To-do DNC</a>
 	</p>
 </div>
 
@@ -51,18 +46,3 @@ $ npm run server
 $ npm run dev
 ```
 - [Acesse a aplicação](http://localhost:5173)
-
-<hr>
-
-by Felipe Borges<br>
-<div>
-	<a href="https://www.linkedin.com/in/felipejsborges">
-		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/linkedin.svg" alt="LinkedIn">
-	</a>
-	<a href="https://wa.me/+55012996477129">
-		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/whatsapp.svg" alt="WhatsApp">
-	</a>
-	<a href="mailto:felipejsborges@outlook.com">
-		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/mail.svg" alt="E-mail">
-	</a>
-</div>
