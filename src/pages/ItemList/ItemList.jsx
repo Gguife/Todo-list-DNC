@@ -1,5 +1,5 @@
 import './ItemList.scss'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 //Icons
@@ -11,7 +11,37 @@ import { Header } from '../../components/header/Header'
 import { Title } from '../../components/title/Title'
 
 export const ItemList = () => {
+  const [tasks, setTasks] = useState([])
 
+  //Envio da Nova tarefa 
+  const handleSubmit = (event) =>{
+    event.preventDefault()
+    const newTask = event.target.elements.task.value
+    setTasks(tasks => [...tasks, {name: newTask, completed: false}])
+    event.target.reset()   
+  }
+
+  //Checkbox toggle
+  const handleToggle = (key) =>{
+    setTasks(tasks => {
+      const updatedTasks = tasks.map((task, i) => {
+        if (i === key) {
+          return { ...task, completed: !task.completed };
+        }
+        return task;
+      });
+      return updatedTasks;
+    });
+  }
+
+  //Funcionalidade dos botoes Edit e Delite
+  const handleDelite = (key) =>{
+    setTasks(tasks => {
+      const updatedTasks = [...tasks]
+      updatedTasks.splice(key, 1)
+      return updatedTasks
+    })
+  }
 
   return (
 
@@ -35,16 +65,23 @@ export const ItemList = () => {
                 <hr />
               </td>
             </tr>
-              <td>Testando</td>
-              <td><input type="checkbox" /></td>
-              <td>
-                <img src={Edit} alt="Editar" />
-                <img src={Delete} alt="Remover" />
-              </td>
+            {tasks.map((task, key) => (
+              <tr key={key}>
+                <td>{task.name}</td>
+                <td><input type="checkbox" checked={task.completed} onChange={() => handleToggle(key)} /></td>
+                <td>
+                  <img src={Delete} alt="Deletar" onClick={() => handleDelite(key)} />
+                </td>
+              </tr>
+            ))
+            }
             <tr>
-              <td><em>Nova tarefa...</em></td>
-              <td></td>
-              <td>+</td>
+              <td>
+                <form action="" onSubmit={handleSubmit}>
+                  <input type="text" name='task' placeholder='Nova Tarefa...' />
+                  <button type='submit'>+</button>
+                </form>
+              </td>
             </tr>
           </tbody>
         </table>
