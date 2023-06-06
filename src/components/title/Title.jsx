@@ -1,9 +1,10 @@
-import React from 'react'
+import './Title.scss'
 
 export const Title = () => {
   return (
-    <div>
-      <h1 className='title'>Otimize seu tempo e se organize com o nosso Planejador Diário.</h1>
+    <div className='title'>
+      <h1>Otimize seu tempo e se organize com o nosso Planejador Diário.</h1>
+      <span>@Gguife</span>
     </div>
   )
 }

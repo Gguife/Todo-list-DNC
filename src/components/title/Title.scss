@@ -1,0 +1,52 @@
+@use '../../sass/variables' as * ;
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0 20px 0;
+
+  h1{
+    font-size: $large-font;
+    text-align: center;
+  }
+  span{
+    color: #999;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 660px){
+  .title{
+    padding: 10px;
+    margin: 130px 0 20px 0;
+  
+    h1{
+      font-size: $medium-font;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 516px){
+  .title{
+    h1{
+      font-size: $small-font;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 445px){
+  .title{
+    margin: 90px 0 20px 0;
+    h1{
+      font-size: 1rem;
+      text-align: center;
+    }
+    span{
+      margin-top: 0px;
+      font-size: .7rem;
+    }
+  }
+}
