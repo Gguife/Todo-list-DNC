@@ -1,7 +1,7 @@
 @use '../../sass/variables' as * ;
 
 .header{
-  height: 74px;
+  height: 9vh;
   background-color: $secondary-color;
   .header-content{
     display: flex;
@@ -29,6 +29,42 @@
       margin-left: 39px;
       border-radius: 10px 10px 0px 0px;
       font-size: $small-font;
+    }
+  }
+  .header-logo{
+    position: absolute;
+    right: 30px;
+    top: 11vh;
+    img{
+      width: 80px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .header{
+    .header-content{
+      margin: 0;
+      p{
+        font-weight: 600;
+        font-size: 1rem;
+        width: 150px;
+        height: 40px;
+        justify-content: center;
+      }
+      span{
+        width: 150px;
+        height: 40px;
+        font-size: 1rem;
+        margin-left: 15px;
+      }
+    }
+
+    .header-logo{
+      img{
+        width: 55px;
+      }
     }
   }
 }
