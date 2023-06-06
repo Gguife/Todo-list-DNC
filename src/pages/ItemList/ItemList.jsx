@@ -1,5 +1,4 @@
 import './ItemList.scss'
-import { db } from '../../mock/dbMock'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -11,18 +10,8 @@ import Delete from '../../assets/delete.png'
 import { Header } from '../../components/header/Header'
 import { Title } from '../../components/title/Title'
 
-//pages-modal
-import { DeleteItem } from '../deleteItem/DeleteItem'
-import { EditItem } from '../editItem/EditItem'
-
 export const ItemList = () => {
-  const [completedTask, setCompletedTask] = useState(db.map((item) => item.completed))
 
-  const handleCheckboxChange = (key) =>{
-    const updateCheck = [...completedTask]
-    updateCheck[key] = !updateCheck[key]
-    setCompletedTask(updateCheck)
-  }
 
   return (
 
@@ -46,17 +35,13 @@ export const ItemList = () => {
                 <hr />
               </td>
             </tr>
-            {db.map((item, key) => (
-            <tr key={key}>
-              <td className='position-start'>{item.title}</td>
-              <td><input type="checkbox" checked={completedTask[key]} onChange={() => handleCheckboxChange(key)} /></td>
-              <td className='position-end'>
-                <Link to='/edit'><img className='edit' src={Edit} alt="" /></Link>
-                <Link to='/delete'><img className='delete' src={Delete} alt="" /></Link>
+              <td>Testando</td>
+              <td><input type="checkbox" /></td>
+              <td>
+                <img src={Edit} alt="Editar" />
+                <img src={Delete} alt="Remover" />
               </td>
-            </tr>
-          ))}
-          <tr>
+            <tr>
               <td><em>Nova tarefa...</em></td>
               <td></td>
               <td>+</td>
