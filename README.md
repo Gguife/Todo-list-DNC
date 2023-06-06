@@ -17,6 +17,8 @@
 
   Projeto criado para sa organzação dos seus objetivos diários, facilitar e melhorar sua qualidade de vida. </br>
   Essa nova versão conta com uma melhoria na interface, melhorias de usuabiliadade implementas e completamente funcionais.
+  
+  Veja o projeto: <a href='https://to-do-dnc.vercel.app/'>To-do Gguife</a>
 
 <hr>
 
