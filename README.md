@@ -63,15 +63,15 @@ $ npm run dev
 
 <hr>
 
-by Felipe Borges<br>
+by Guilherme Gomes<br>
 <div>
-	<a href="https://www.linkedin.com/in/felipejsborges">
+	<a href="https://www.linkedin.com/in/guilherme-gomes-b09444254/)">
 		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/linkedin.svg" alt="LinkedIn">
 	</a>
-	<a href="https://wa.me/+55012996477129">
+	<a href="https://wa.me/+5512981885646">
 		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/whatsapp.svg" alt="WhatsApp">
 	</a>
-	<a href="mailto:felipejsborges@outlook.com">
+	<a href="mailto:gguife747@gmailcom">
 		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/mail.svg" alt="E-mail">
 	</a>
 </div>
